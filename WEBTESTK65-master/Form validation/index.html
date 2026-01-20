@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+</html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./fontawesome-free-6.1.1-web/css/all.min.css">
+</head>
+<body>
+<!--  Không chỉnh sửa bất kì đoạn code nào ở trên -->
+<!-- Code từ đây -->
+    <form action method="POST" class="reg-form" id="form-1">
+
+        <div class="heading">
+            <h2>Đăng ký thành viên</h2>
+        </div>
+ 
+        <div class="main">
+
+            <!-- Name -->
+            <div class="input-form">
+                <label for="name">Tên đầy đủ</label>
+                <input name="name" type="text" id="input__name" placeholder="VD:Phuong Nam">
+                <span class="form-message"></span> 
+            </div>
+            <!-- Email -->
+            <div class="input-form">
+                <label for="email">Email</label>
+                <input name="email" type="text" id="input__email" placeholder="VD:email@domain.com">
+                <span class="form-message"></span>    
+            </div>
+            <!-- Password -->
+            <div class="input-form">
+                <label for="password">Mật khẩu</label>
+                <input name="password" type="password" id="input__password" placeholder="Nhập mật khẩu">
+                <span class="form-message"></span>    
+            </div>
+            <!-- Typeagain -->
+            <div class="input-form">
+                <label for="password-again">Nhập lại mật khẩu</label>
+                <input name="password-again" type="password" id="input__password-again" placeholder="Nhập lại mật khẩu">
+                <span class="form-message"></span>    
+            </div>
+            <!-- Address -->
+            <div class="input-form">
+                <label for="province">Tỉnh/TP</label>
+                <select name="province" id="province">
+                    <option value="">---Chọn tỉnh/TP</option>
+                    <option value="hni">Hà Nội</option>
+                    <option value="hpg">Hải Phòng</option>
+                    <option value="dn">Đà Nẵng</option>
+                </select>   
+                <span class="form-message"></span>    
+
+            </div>
+            <!-- Gender -->
+            <div class="input-form">
+                <label for="gender">Giới tính</label>
+                <div>
+                    <input name="gender" type="checkbox" value="male" >
+                    Nam
+                </div>
+                <div>
+                    <input name="gender" type="checkbox" value="female" >
+                    Nữ
+                </div>
+                <div>
+                    <input name="gender" type="checkbox" value="other" >
+                    Khác
+                </div>
+                <span class="form-message"></span>    
+            </div>
+        </div>
+        <button class="form-submit">Đăng kí</button>
+    </form>
+    
+    <script src="./validator.js"></script>
+
+</body>
+</html>

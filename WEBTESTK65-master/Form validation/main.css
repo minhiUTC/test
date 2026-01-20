@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Open Sans", sans-serif;
+}
+/* Không chỉnh sửa bất kì đoạn code nào ở trên */
+/* Code từ đây */
+
+body {
+    background-color: #d4d2d2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+    margin: 25px;
+}
+
+body > .reg-form {
+    background-color: #fff;
+    width: 400px;
+    padding: 30px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+}
+
+.heading {
+    text-align: center;
+}
+
+.heading, .main {
+    margin: 30px 30px 0 30px;
+}
+
+
+
+label {
+    font-weight: 600;
+}
+
+.input-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 0
+}
+
+#input__name , #input__email, #input__password, #input__password-again, #province {
+    height: 40px;
+    padding: 8px 12px;
+    border: 1px solid #b3b3b3;
+    border-radius: 4px;
+    outline: none;
+    font-size: 14px;
+}
+
+#input__name:hover , #input__email:hover, #input__password:hover, #input__password-again:hover, #province:hover {
+    border-color: #1dbfaf;
+}
+
+#input__name:focus , #input__email:focus, #input__password:focus, #input__password-again:focus,  #province:focus {
+    outline-color: #1dbfaf;
+}
+
+.form-submit {
+    background-color: #1dbfaf;
+    margin: 20px 30px 0 30px;
+    padding: 12px 0;
+    color: #fff;
+    width: 85%;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form-submit:hover {
+    background-color: #1ac7b6;
+}
+ .invalid > #input__name {
+    border-color: red;
+}
+.invalid > #input__password {
+    border-color: red;
+}
+.invalid > #input__email {
+    border-color: red;
+}
+.invalid > #input__password-again {
+    border-color: red;
+}
+.invalid > #province {
+    border-color: red;
+}
+
+.invalid > .form-message {
+    color: red;
+}
+
+input[name="gender"]:checked {
+    accent-color: #1dbfaf;
+}
+
