@@ -95,9 +95,15 @@ label {
 }
 
 .invalid > .form-message {
+    display: none;
+    font-size: 13px;
+    margin-top: 6px;
+    font-weight: 400;
+}
+.input-form.invalid:hover .form-message {
+    display: block;
     color: red;
 }
-
 input[name="gender"]:checked {
     accent-color: #1dbfaf;
 }
